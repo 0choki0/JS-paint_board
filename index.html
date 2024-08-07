@@ -7,8 +7,23 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
+    <div class="color-options">
+        <input type="color" id="color" />
+        <div class="color-option" style="background-color: #FF595E;" data-color="#FF595E"></div>
+        <div class="color-option" style="background-color: #FFCA3A;" data-color="#FFCA3A"></div>
+        <div class="color-option" style="background-color: #8AC926;" data-color="#8AC926"></div>
+        <div class="color-option" style="background-color: #1982C4;" data-color="#1982C4"></div>
+        <div class="color-option" style="background-color: #6A4C93;" data-color="#6A4C93"></div>
+        <input id="line-width" type="range" value="5" min="1" max="20" step="1"> 
+    </div>
     <canvas></canvas>
+    <div class="etcBtns">    
+        <img id="eraser" src="image/eraser.png" data-color="#FFFFFF"></img>
+        <button id="clear" class="etcBtn">clear</button>
+        <button id="saveImg" class="etcBtn">save</button>
+        <button id="loadImg" class="etcBtn">load</button>
+        <input id="loadfile" type="file" style="display: none;" accept="image/*" />
+    </div>
 
     <script src="js/paintBoard.js"></script>
 </body>
